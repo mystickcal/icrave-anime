@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://icraveanime.com/sitemap.xml

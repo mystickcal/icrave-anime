@@ -1,0 +1,71 @@
+baseURL = "https://icraveanime.com/"
+languageCode = "en-us"
+title = "I Crave Anime"
+theme = "PaperMod"
+paginate = 10
+
+[params]
+  env = "production"
+  description = "Your daily fix of anime news, reviews, rankings, and deep dives. From classics to currently airing — we cover it all."
+  author = "I Crave Anime"
+  defaultTheme = "light"
+  disableThemeToggle = true
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+  comments = false
+
+  [params.homeInfoParams]
+    Title = "I Crave Anime 🍥"
+    Content = "News, reviews, rankings, and deep dives into the anime you love. From timeless classics to this season's hottest drops."
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:hello@icraveanime.com"
+
+[params.assets]
+  favicon = "/favicon.ico"
+
+[params.cover]
+  hidden = false
+  hiddenInList = false
+  hiddenInSingle = false
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menu]
+  [[menu.main]]
+    identifier = "reviews"
+    name = "Reviews"
+    url = "/categories/reviews/"
+    weight = 10
+  [[menu.main]]
+    identifier = "rankings"
+    name = "Rankings"
+    url = "/categories/rankings/"
+    weight = 20
+  [[menu.main]]
+    identifier = "guides"
+    name = "Guides"
+    url = "/categories/guides/"
+    weight = 30
+  [[menu.main]]
+    identifier = "news"
+    name = "News"
+    url = "/categories/news/"
+    weight = 40
+  [[menu.main]]
+    identifier = "start-here"
+    name = "Start Here"
+    url = "/start-here/"
+    weight = 50
