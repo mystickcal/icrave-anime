@@ -2,12 +2,13 @@ baseURL = "https://icraveanime.com/"
 languageCode = "en-us"
 title = "I Crave Anime"
 theme = "PaperMod"
+
 [pagination]
   pagerSize = 10
 
 [params]
   env = "production"
-  description = "Your daily fix of anime news, reviews, rankings, and deep dives. From classics to currently airing — we cover it all."
+  description = "In-depth anime reviews, watch order guides, seasonal rankings, and news. From timeless classics to this season's hottest drops."
   author = "I Crave Anime"
   defaultTheme = "light"
   disableThemeToggle = true
@@ -15,14 +16,21 @@ theme = "PaperMod"
   ShowShareButtons = true
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
-  ShowCodeCopyButtons = true
+  ShowCodeCopyButtons = false
   ShowToc = true
   TocOpen = false
   comments = false
 
+  images = ["/images/og-default.jpg"]
+
+  [params.label]
+    text = "I Crave Anime"
+    # icon = "/images/logo.png"
+    # iconHeight = 50
+
   [params.homeInfoParams]
     Title = "I Crave Anime 🍥"
-    Content = "News, reviews, rankings, and deep dives into the anime you love. From timeless classics to this season's hottest drops."
+    Content = "In-depth reviews, watch order guides, seasonal rankings, and news. From timeless classics to this season's hottest drops."
 
   [[params.socialIcons]]
     name = "email"
