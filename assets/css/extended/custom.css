@@ -103,25 +103,7 @@ button, input, select {
 }
 
 .logo {
-  font-weight: 800;
-  font-size: 1.3rem;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.logo a {
-  color: var(--text-primary) !important;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0 !important;
-}
-
-.logo a img {
-  height: 50px !important;
-  width: auto !important;
-  transform: none !important;
+  display: none !important;
 }
 
 .logo a::before {
@@ -206,34 +188,25 @@ button, input, select {
   z-index: 1;
 }
 
-.ia-hero__inner--with-logo {
+.ia-hero__inner--centered {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 48px;
-  text-align: left;
+  text-align: center;
 }
 
 .ia-hero__logo {
-  flex-shrink: 0;
+  margin-bottom: 24px;
 }
 
 .ia-hero__logo img {
-  width: 260px;
+  width: 320px;
   height: auto;
 }
 
-.ia-hero__text {
-  flex: 1;
-}
-
 @media (max-width: 768px) {
-  .ia-hero__inner--with-logo {
-    flex-direction: column;
-    text-align: center;
-    gap: 24px;
-  }
   .ia-hero__logo img {
-    width: 200px;
+    width: 240px;
   }
 }
 
@@ -453,9 +426,18 @@ button, input, select {
 
 .ia-post-card__thumb--fallback {
   background: linear-gradient(135deg, 
-    rgba(255, 107, 157, 0.25) 0%, 
-    rgba(255, 140, 66, 0.20) 50%, 
-    rgba(123, 104, 238, 0.25) 100%);
+    rgba(255, 107, 157, 0.30) 0%, 
+    rgba(45, 53, 97, 0.35) 40%, 
+    rgba(139, 107, 191, 0.30) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ia-post-card__thumb--fallback::after {
+  content: "🌸";
+  font-size: 3rem;
+  opacity: 0.5;
 }
 
 .ia-post-card__body {
@@ -875,26 +857,30 @@ button, input, select {
 }
 
 .footer__content {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 48px;
   align-items: center;
-  gap: 36px;
   margin-bottom: 40px;
+}
+
+@media (max-width: 800px) {
+  .footer__content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    text-align: center;
+  }
 }
 
 /* Brand section */
 .footer__brand {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
   gap: 14px;
 }
 
 .footer__logo-link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: inline-block;
   text-decoration: none;
 }
 
@@ -903,9 +889,8 @@ button, input, select {
 }
 
 .footer__logo-img {
-  width: 240px !important;
+  width: 220px !important;
   height: auto !important;
-  border-radius: 12px;
 }
 
 .footer__tagline {
@@ -913,21 +898,19 @@ button, input, select {
   color: rgba(226, 232, 240, 0.60);
   margin: 0;
   line-height: 1.6;
-  max-width: 50ch;
-  text-align: center;
+  max-width: 40ch;
 }
 
 /* Quick links */
 .footer__nav {
-  display: flex;
-  gap: 60px;
-  justify-content: center;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
 }
 
 @media (max-width: 600px) {
   .footer__nav {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 24px;
   }
 }
