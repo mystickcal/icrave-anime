@@ -1,0 +1,87 @@
+{{- if not (.Param "hideFooter") }}
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__content">
+      <div class="footer__brand">
+        <a href="/" class="footer__logo-link">
+          <img src="/images/logo-dark-bg.png" alt="I Crave Anime" class="footer__logo-img" />
+        </a>
+        <p class="footer__tagline">In-depth reviews, watch order guides, and seasonal rankings from fans who actually watch.</p>
+      </div>
+      <div class="footer__nav">
+        <div class="footer__col">
+          <h4>Content</h4>
+          <ul>
+            <li><a href="/categories/reviews/">Reviews</a></li>
+            <li><a href="/categories/rankings/">Rankings</a></li>
+            <li><a href="/categories/guides/">Guides</a></li>
+            <li><a href="/categories/news/">News</a></li>
+            <li><a href="/posts/">All Posts</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="/start-here/">Start Here</a></li>
+            <li><a href="/about/">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copyright">&copy; {{ now.Year }} I Crave Anime. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+{{- end }}
+
+{{- if (not site.Params.disableScrollToTop) }}
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+{{- end }}
+
+{{- partial "extend_footer.html" . }}
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({ behavior: "smooth" });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") { history.replaceState(null, null, " "); }
+            else { history.pushState(null, null, `#${id}`); }
+        });
+    });
+</script>
+
+{{- if (not site.Params.disableScrollToTop) }}
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+</script>
+{{- end }}

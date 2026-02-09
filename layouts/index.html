@@ -1,0 +1,69 @@
+{{- /* Custom homepage for iCrave Anime */ -}}
+{{- define "main" -}}
+
+<section class="ia-hero">
+  <div class="ia-hero__inner ia-hero__inner--with-logo">
+    <div class="ia-hero__logo">
+      <img src="/images/logo-transparent.png" alt="I Crave Anime" />
+    </div>
+    <div class="ia-hero__text">
+      <p class="ia-hero__kicker">🌸 Your Daily Anime Digest</p>
+      <h1 class="ia-hero__title">Reviews, Rankings & Watch Guides</h1>
+      <p class="ia-hero__tagline">In-depth coverage from fans who actually watch. No clickbait, no filler.</p>
+      <div class="ia-hero__cta">
+        <a class="ia-btn ia-btn--primary" href="/categories/guides/">Browse Guides</a>
+        <a class="ia-btn ia-btn--ghost" href="/categories/rankings/">Rankings</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ia-section">
+  <div class="ia-section__head">
+    <h2>Latest Posts</h2>
+    <a class="ia-section__link" href="/posts/">View all →</a>
+  </div>
+
+  <div class="ia-post-grid">
+    {{- $pages := where .Site.RegularPages "Type" "in" (slice "posts" "post") -}}
+    {{- $pages = where $pages "Draft" false -}}
+    {{- range first 12 (sort $pages "Date" "desc") -}}
+      {{- $cat := "" -}}
+      {{- with .Params.categories -}}
+        {{- $cat = (index . 0) -}}
+      {{- end -}}
+      <article class="ia-post-card">
+        <a class="ia-post-card__link" href="{{ .RelPermalink }}">
+          {{- $img := "" -}}
+          {{- with .Params.cover -}}
+            {{- $img = .image -}}
+          {{- end -}}
+          {{- if $img -}}
+            <div class="ia-post-card__thumb" style="--ia-thumb-bg: url('{{ $img }}');"></div>
+          {{- else -}}
+            <div class="ia-post-card__thumb ia-post-card__thumb--fallback"></div>
+          {{- end -}}
+
+          <div class="ia-post-card__body">
+            <div class="ia-post-card__meta">
+              {{- if $cat -}}
+                <span class="ia-post-card__cat ia-post-card__cat--{{ $cat | urlize }}">{{ $cat }}</span>
+              {{- end -}}
+              <span class="ia-post-card__date">{{ .Date.Format "Jan 2, 2006" }}</span>
+            </div>
+            <h3 class="ia-post-card__title">{{ .Title }}</h3>
+            {{- with .Params.description -}}
+              <p class="ia-post-card__desc">{{ . }}</p>
+            {{- end -}}
+            <div class="ia-post-card__footer">
+              <span class="ia-post-card__read-time">{{ .ReadingTime }} min read</span>
+              <span class="ia-post-card__cta">Read more →</span>
+            </div>
+          </div>
+        </a>
+      </article>
+    {{- end -}}
+  </div>
+</section>
+
+{{- end -}}

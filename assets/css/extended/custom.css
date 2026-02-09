@@ -3,12 +3,12 @@
 
 /* ========== COLOR PALETTE ========== */
 :root {
-  /* Brand Colors */
+  /* Brand Colors — matched to logo */
   --sakura-pink: #FF6B9D;
   --deep-indigo: #2D3561;
-  --sunset-orange: #FF8C42;
-  --forest-teal: #00B8A9;
-  --royal-purple: #7B68EE;
+  --sunset-orange: #E8963A;
+  --forest-teal: #5CC8D7;
+  --royal-purple: #8B6BBF;
 
   /* Category Colors */
   --anime-red: #FF5757;
@@ -115,6 +115,13 @@ button, input, select {
   display: flex;
   align-items: center;
   gap: 8px;
+  font-size: 0 !important;
+}
+
+.logo a img {
+  height: 50px !important;
+  width: auto !important;
+  transform: none !important;
 }
 
 .logo a::before {
@@ -197,6 +204,37 @@ button, input, select {
   text-align: center;
   position: relative;
   z-index: 1;
+}
+
+.ia-hero__inner--with-logo {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  text-align: left;
+}
+
+.ia-hero__logo {
+  flex-shrink: 0;
+}
+
+.ia-hero__logo img {
+  width: 260px;
+  height: auto;
+}
+
+.ia-hero__text {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .ia-hero__inner--with-logo {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+  .ia-hero__logo img {
+    width: 200px;
+  }
 }
 
 .ia-hero__kicker {
@@ -826,6 +864,9 @@ button, input, select {
   padding: 64px 0 32px;
   color: rgba(226, 232, 240, 0.70);
   font-size: 0.9rem;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
 }
 
 .footer__inner {
@@ -834,44 +875,37 @@ button, input, select {
 }
 
 .footer__content {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
   margin-bottom: 40px;
-}
-
-@media (max-width: 800px) {
-  .footer__content {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
 }
 
 /* Brand section */
 .footer__brand {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  align-items: center;
+  text-align: center;
+  gap: 14px;
 }
 
 .footer__logo-link {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 10px;
   text-decoration: none;
 }
 
 .footer__logo-link::before {
-  content: "🌸";
-  font-size: 1.3rem;
+  display: none;
 }
 
-.footer__site-name {
-  font-size: 1.2rem;
-  font-weight: 800;
-  color: white;
-  font-family: 'Sora', sans-serif;
-  letter-spacing: -0.02em;
+.footer__logo-img {
+  width: 240px !important;
+  height: auto !important;
+  border-radius: 12px;
 }
 
 .footer__tagline {
@@ -879,19 +913,21 @@ button, input, select {
   color: rgba(226, 232, 240, 0.60);
   margin: 0;
   line-height: 1.6;
-  max-width: 40ch;
+  max-width: 50ch;
+  text-align: center;
 }
 
 /* Quick links */
 .footer__nav {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  text-align: center;
 }
 
 @media (max-width: 600px) {
   .footer__nav {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     gap: 24px;
   }
 }

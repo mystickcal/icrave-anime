@@ -24,9 +24,9 @@ theme = "PaperMod"
   images = ["/images/og-default.jpg"]
 
   [params.label]
-    text = "I Crave Anime"
-    # icon = "/images/logo.png"
-    # iconHeight = 50
+    text = ""
+    icon = "/images/logo-transparent.png"
+    iconHeight = 60
 
   [params.homeInfoParams]
     Title = "I Crave Anime 🍥"
