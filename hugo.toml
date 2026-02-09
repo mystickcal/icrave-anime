@@ -2,7 +2,8 @@ baseURL = "https://icraveanime.com/"
 languageCode = "en-us"
 title = "I Crave Anime"
 theme = "PaperMod"
-paginate = 10
+[pagination]
+  pagerSize = 10
 
 [params]
   env = "production"
