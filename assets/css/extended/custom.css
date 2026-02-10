@@ -158,7 +158,7 @@ button, input, select {
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-  padding: clamp(40px, 5vw, 60px) 0 clamp(40px, 5vw, 60px);
+  padding: clamp(24px, 3vw, 36px) 0 clamp(20px, 2.5vw, 32px);
   background: linear-gradient(135deg, 
     rgba(255, 107, 157, 0.08) 0%, 
     rgba(255, 140, 66, 0.06) 50%, 
@@ -196,7 +196,7 @@ button, input, select {
 }
 
 .ia-hero__logo {
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 }
 
 .ia-hero__logo img {
@@ -213,29 +213,29 @@ button, input, select {
 .ia-hero__kicker {
   display: inline-flex;
   align-items: center;
-  padding: 8px 16px;
+  padding: 6px 14px;
   border-radius: 999px;
   background: rgba(255, 107, 157, 0.10);
   border: 1px solid rgba(255, 107, 157, 0.20);
   color: var(--sakura-pink);
   font-weight: 700;
   font-size: 0.875rem;
-  margin: 0 0 20px;
+  margin: 0 0 12px;
   letter-spacing: -0.01em;
 }
 
 .ia-hero__title {
-  margin: 0 0 16px;
-  font-size: clamp(2.8rem, 5.2vw, 4rem);
+  margin: 0 0 10px;
+  font-size: clamp(2.4rem, 4.5vw, 3.2rem);
   font-weight: 800;
   color: var(--text-primary);
   line-height: 1.1;
 }
 
 .ia-hero__tagline {
-  margin: 0 0 32px;
+  margin: 0 0 20px;
   color: var(--text-secondary);
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   line-height: 1.6;
   max-width: 60ch;
   margin-left: auto;
@@ -304,7 +304,7 @@ button, input, select {
 .ia-section {
   width: min(var(--nav-width), 92vw);
   margin: 0 auto;
-  padding: clamp(60px, 8vw, 100px) 0;
+  padding: clamp(32px, 4vw, 48px) 0;
 }
 
 .ia-section__head {
@@ -988,11 +988,11 @@ button, input, select {
   }
 
   .ia-section {
-    padding: 48px 0;
+    padding: 28px 0;
   }
 
   .ia-hero {
-    padding: 32px 0 32px;
+    padding: 20px 0 16px;
   }
 
   .ia-section__head {
