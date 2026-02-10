@@ -7,8 +7,8 @@ tags: ["winter-2026", "seasonal", "frieren", "vigilantes", "currently-airing"]
 description: "Every anime worth watching in Winter 2026, ranked. From Frieren Season 2 to hidden gems you haven't heard of yet."
 ShowToc: true
 cover:
-  image: ""
-  alt: "Winter 2026 anime season guide"
+  image: "/images/winter-2026-cover.png"
+  alt: "Winter 2026 anime season - snowy Japanese village with aurora borealis"
   hidden: false
 ---
 

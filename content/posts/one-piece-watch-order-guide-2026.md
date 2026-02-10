@@ -7,8 +7,8 @@ tags: ["one-piece", "watch-order", "filler-guide", "shonen", "long-running"]
 description: "The complete One Piece watch order for 2026. Every canon arc, which episodes to skip, and where the remake fits in. Updated through Egghead."
 ShowToc: true
 cover:
-  image: ""
-  alt: "One Piece watch order guide"
+  image: "/images/one-piece-cover.png"
+  alt: "One Piece watch order guide - pirate ship sailing the grand ocean at sunset"
   hidden: false
 ---
 

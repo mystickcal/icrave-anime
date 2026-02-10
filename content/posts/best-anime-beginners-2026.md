@@ -7,8 +7,8 @@ tags: ["beginners", "recommendations", "starter-anime", "gateway-anime"]
 description: "New to anime? These 15 shows are the perfect starting point. No filler lists, no obscure picks. Just genuinely great anime that hooks first-timers."
 ShowToc: true
 cover:
-  image: ""
-  alt: "Best anime for beginners"
+  image: "/images/beginners-cover.png"
+  alt: "Best anime for beginners - colorful montage of anime genres"
   hidden: false
 ---
 
