@@ -200,13 +200,13 @@ button, input, select {
 }
 
 .ia-hero__logo img {
-  width: 420px;
+  width: 520px;
   height: auto;
 }
 
 @media (max-width: 768px) {
   .ia-hero__logo img {
-    width: 300px;
+    width: 360px;
   }
 }
 
