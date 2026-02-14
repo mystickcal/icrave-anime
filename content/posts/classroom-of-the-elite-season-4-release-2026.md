@@ -6,6 +6,10 @@ description: "Classroom of the Elite Season 4 is set for April 2026! Here's ever
 tags: ["Classroom of the Elite", "Spring 2026", "Anime News"]
 categories: ["Anime"]
 keywords: ["Classroom of the Elite season 4 release date", "Classroom of the Elite year 2 anime", "Classroom of the Elite season 4 April 2026"]
+cover:
+  image: "/images/cote-cover.jpg"
+  alt: "Classroom of the Elite Season 4 key visual"
+  hidden: false
 ---
 
 The hype for Classroom of the Elite Season 4 is absolutely real, and honestly, I get it. After that wild Season 3 finale, fans have been counting down the days until we get back to Advanced Nurturing High School. The good news? We finally have a release window, and it's coming sooner than you might think.

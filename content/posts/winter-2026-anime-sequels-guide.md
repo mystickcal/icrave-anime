@@ -21,6 +21,10 @@ keywords:
   - best Winter 2026 anime
 featured_image: ""
 draft: false
+cover:
+  image: "/images/winter-sequels-cover.jpg"
+  alt: "Winter 2026 anime sequels guide"
+  hidden: false
 ---
 
 Winter 2026 anime is absolutely stacked with sequels. If you've been following big shonen hits, psychological dramas, or emotional fantasy adventures, this season delivers the kind of continuation that makes anime fans lose their minds. But with so many high-profile returns, the real question is: **what to watch Winter 2026 first?**

@@ -7,6 +7,10 @@ keywords: ["spring 2026 anime schedule", "spring 2026 anime list", "spring 2026 
 categories: ["Seasonal Guides"]
 tags: ["Spring 2026", "Anime Schedule", "Seasonal Anime"]
 image: ""
+cover:
+  image: "/images/spring-anime-cover.jpg"
+  alt: "Spring 2026 anime schedule guide"
+  hidden: false
 ---
 
 The Spring 2026 anime season is already looking stacked, and we're still weeks away from the official lineup announcements. Studios are dropping confirmations left and right, and I've been tracking everything to bring you this early Spring 2026 anime schedule.

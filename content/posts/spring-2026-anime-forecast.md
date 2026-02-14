@@ -16,6 +16,10 @@ keywords:
   - Spring 2026 anime
   - Spring 2026 anime list
   - best Spring 2026 anime
+cover:
+  image: "/images/spring-anime-cover.jpg"
+  alt: "Spring 2026 anime season preview"
+  hidden: false
 ---
 
 Spring seasons are chaos in the best way. You get:

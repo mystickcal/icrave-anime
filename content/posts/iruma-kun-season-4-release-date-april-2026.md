@@ -6,6 +6,10 @@ tags: ["Iruma-kun", "Spring 2026", "Sequel", "NHK"]
 categories: ["Release Dates"]
 description: "Welcome to Demon School! Iruma-kun Season 4 hits April 2026. Here's the confirmed release window, Music Festival arc details, and where to watch."
 keywords: ["iruma-kun season 4 release date", "welcome to demon school iruma-kun season 4 april 2026", "mairimashita iruma-kun season 4"]
+cover:
+  image: "/images/iruma-cover.jpg"
+  alt: "Welcome to Demon School Iruma-kun Season 4 key visual"
+  hidden: false
 ---
 
 Iruma's heading back to the Netherworld this April. After three seasons of demon school chaos, **Welcome to Demon School! Iruma-kun Season 4** has an April 2026 release window locked in on [LiveChart](https://www.livechart.me/) and [MyAnimeList](https://myanimelist.net/). No exact premiere date yet, but the timing puts it squarely in the spring 2026 lineup alongside the season's other heavy hitters.
