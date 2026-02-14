@@ -8,7 +8,7 @@ categories: ["Seasonal Guides"]
 tags: ["Spring 2026", "Anime Schedule", "Seasonal Anime"]
 image: ""
 cover:
-  image: "/images/spring-anime-cover.jpg"
+  image: "/images/spring-schedule-cover.jpg"
   alt: "Spring 2026 anime schedule guide"
   hidden: false
 ---

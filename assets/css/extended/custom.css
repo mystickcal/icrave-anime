@@ -1005,6 +1005,31 @@ button, input, select {
   }
 }
 
+/* ========== COVER IMAGE FIX — Proper cropping on list pages ========== */
+.post-entry .entry-cover {
+  overflow: hidden;
+  max-height: 220px;
+}
+
+.post-entry .entry-cover img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.first-entry .entry-cover {
+  overflow: hidden;
+  max-height: 360px;
+}
+
+.first-entry .entry-cover img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  object-position: center center;
+}
+
 /* ========== PRINT STYLES ========== */
 @media print {
   .header,
