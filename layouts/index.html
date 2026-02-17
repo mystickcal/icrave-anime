@@ -37,6 +37,9 @@
             {{- $img = .image -}}
           {{- end -}}
           {{- if $img -}}
+            {{- if not (hasPrefix $img "/") -}}
+              {{- $img = printf "/%s" $img -}}
+            {{- end -}}
             <div class="ia-post-card__thumb" style="--ia-thumb-bg: url('{{ $img }}');"></div>
           {{- else -}}
             <div class="ia-post-card__thumb ia-post-card__thumb--fallback"></div>
