@@ -2,12 +2,12 @@
 title: "Attack on Titan Watch Order Guide (2026): Every Season, OVA, and Movie Explained"
 date: 2026-02-18T07:45:00-05:00
 draft: false
-description: "The complete Attack on Titan watch order for 2026. All 94 episodes, 8 OADs, and The Last Attack movie — with a 3-route framework to match your time and goals."
+description: "The complete Attack on Titan watch order for 2026. All 94 episodes, 8 OADs, and The Last Attack movie -- with a 3-route framework to match your time and goals."
 tags: ["anime", "attack-on-titan", "watch-order", "aot", "shingeki-no-kyojin"]
 categories: ["Watch Orders"]
 cover:
   image: "images/attack-on-titan-watch-order-guide-2026.jpg"
-  alt: "Three cosplayers in detailed warrior costumes performing sword fight outdoors — representing the action and intensity of Attack on Titan"
+  alt: "Three cosplayers in detailed warrior costumes performing sword fight outdoors, representing the action and intensity of Attack on Titan"
   caption: ""
   relative: true
 ---
@@ -89,7 +89,7 @@ The hook.
 
 Eren Yeager watches his world get destroyed in Episode 1. Not symbolically. Literally, in front of him, in a way that is designed to be unforgettable. The show opens with survival horror energy and a mystery underneath it -- why do the Titans exist? What are they actually doing? Why do they only eat people when there's no nutritional value in it?
 
-Season 1 establishes the rules, the world, the cast, and -- crucially -- makes you care about all of it before it starts taking it apart. The animation is fluid and expressive, the ODM (omni-directional mobility) gear action sequences are genuinely thrilling, and Hiroyuki Sawano's soundtrack is doing emotional heavy lifting from the first episode.
+Season 1 establishes the rules, the world, the cast, and most importantly makes you care about all of it before it starts taking it apart. The animation is fluid and expressive, the ODM (omni-directional mobility) gear action sequences are genuinely thrilling, and Hiroyuki Sawano's soundtrack is doing emotional heavy lifting from the first episode.
 
 By the season finale, you have answers. And those answers raise bigger questions.
 
